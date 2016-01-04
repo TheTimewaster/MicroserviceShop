@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "productId":1,
+      "productName":"Fairtrade Coffee 500g",
+      "productPrice":6.99
+    },
+    {
+      "productId":2,
+      "productName":"Bread 250g",
+      "productPrice":1.49
+    }
+  ]
+}

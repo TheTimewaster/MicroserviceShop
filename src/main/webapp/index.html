@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It Works!</title>
+    <script src="resources/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="resources/bower_components/angular/angular.js"></script>
+    <script src="resources/bower_components/angular-route/angular-route.js"></script>
+    <link rel="import" href="resources/bower_components/paper-header-panel/paper-header-panel.html">
+    <link rel="import" href="resources/bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="resources/bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="resources/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="resources/bower_components/iron-icons/iron-icons.html">
+    <link rel="stylesheet" href="resources/style.css">
+    <style is="custom-style">
+        #headerToolbar
+        {
+            --paper-toolbar-background: #43A047;
+        }        
+    </style>
+</head>
+<body class="fullbleed layout vertical" ng-app="microServiceShop">
+	<paper-header-panel>
+        <paper-toolbar id="headerToolbar">
+            <paper-icon-button icon="settings-ethernet" id="catalogButton"></paper-icon-button>       
+            <div class="title">Microservices Shop</div>
+            <paper-icon-button icon="shopping-cart" id="cartButton"></paper-icon-button>        
+        </paper-toolbar>
+        <div class="content"> 
+           <div ng-view></div>
+        </div>    
+    </paper-header-panel>
+    <script src="resources/routing.js"></script>
+    <script src="resources/controllers/CatalogController.js"></script>
+    <script src="resources/services/catalog.js"></script>
+    <script>
+        document.getElementById("catalogButton").addEventListener("click", function(e){
+            window.location.href = "#/"; 
+        });
+        document.getElementById("cartButton").addEventListener("click", function(e){
+            window.location.href = "#/cart"; 
+        });
+    </script>
+</body>
+</html>
