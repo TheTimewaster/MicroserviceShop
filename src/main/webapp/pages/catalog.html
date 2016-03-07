@@ -1,3 +1,12 @@
-<div ng-repeat="product in catalog">
-    <p>{{ product.productName }}</p><p>{{ product.productPrice }}</p>
+<div id="product-grid">
+    <div ng-repeat="product in catalog | orderBy:'productPrice'">
+        <div class="card product-card">
+            <div class="product-image"></div>
+            <div class="product-text">
+                <p class="product-title">{{ product.productName }}</p>
+                <p class="product-brand">{{ product.productBrand }}</p>
+                <p class="product-price">{{ (product.productPrice | number:2) + " €" }}</p>
+            </div>
+        </div>
+    </div>
 </div>

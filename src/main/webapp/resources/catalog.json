@@ -1,14 +1,154 @@
 {
   "products": [
-    {
-      "productId":1,
-      "productName":"Fairtrade Coffee 500g",
-      "productPrice":6.99
-    },
-    {
-      "productId":2,
-      "productName":"Bread 250g",
-      "productPrice":1.49
-    }
-  ]
+  {
+    "productId": 0,
+    "productName": "Cannon",
+    "productBrand": "Magnemo",
+    "productPrice": 84.12
+  },
+  {
+    "productId": 1,
+    "productName": "Estes",
+    "productBrand": "Toyletry",
+    "productPrice": 85.86
+  },
+  {
+    "productId": 2,
+    "productName": "Maura",
+    "productBrand": "Comvoy",
+    "productPrice": 58.34
+  },
+  {
+    "productId": 3,
+    "productName": "Wooten",
+    "productBrand": "Vetron",
+    "productPrice": 79.16
+  },
+  {
+    "productId": 4,
+    "productName": "Perkins",
+    "productBrand": "Virva",
+    "productPrice": 38.24
+  },
+  {
+    "productId": 5,
+    "productName": "Santos",
+    "productBrand": "Jumpstack",
+    "productPrice": 47.93
+  },
+  {
+    "productId": 6,
+    "productName": "Kristie",
+    "productBrand": "Nurali",
+    "productPrice": 72.28
+  },
+  {
+    "productId": 7,
+    "productName": "Margo",
+    "productBrand": "Flotonic",
+    "productPrice": 69.26
+  },
+  {
+    "productId": 8,
+    "productName": "Lorraine",
+    "productBrand": "Imkan",
+    "productPrice": 60.59
+  },
+  {
+    "productId": 9,
+    "productName": "Ida",
+    "productBrand": "Magnafone",
+    "productPrice": 22.39
+  },
+  {
+    "productId": 10,
+    "productName": "Middleton",
+    "productBrand": "Comvex",
+    "productPrice": 9.9
+  },
+  {
+    "productId": 11,
+    "productName": "Antonia",
+    "productBrand": "Yurture",
+    "productPrice": 66.46
+  },
+  {
+    "productId": 12,
+    "productName": "May",
+    "productBrand": "Centrexin",
+    "productPrice": 107.17
+  },
+  {
+    "productId": 13,
+    "productName": "Bond",
+    "productBrand": "Lyria",
+    "productPrice": 18.58
+  },
+  {
+    "productId": 14,
+    "productName": "Denise",
+    "productBrand": "Isotronic",
+    "productPrice": 63.5
+  },
+  {
+    "productId": 15,
+    "productName": "Moon",
+    "productBrand": "Aquamate",
+    "productPrice": 103.03
+  },
+  {
+    "productId": 16,
+    "productName": "Conner",
+    "productBrand": "Veraq",
+    "productPrice": 32.06
+  },
+  {
+    "productId": 17,
+    "productName": "Reba",
+    "productBrand": "Endicil",
+    "productPrice": 62.28
+  },
+  {
+    "productId": 18,
+    "productName": "Harriett",
+    "productBrand": "Kiggle",
+    "productPrice": 87.88
+  },
+  {
+    "productId": 19,
+    "productName": "Blake",
+    "productBrand": "Oronoko",
+    "productPrice": 130.17
+  },
+  {
+    "productId": 20,
+    "productName": "Ramsey",
+    "productBrand": "Moltonic",
+    "productPrice": 82.44
+  },
+  {
+    "productId": 21,
+    "productName": "Bernice",
+    "productBrand": "Vendblend",
+    "productPrice": 107.31
+  },
+  {
+    "productId": 22,
+    "productName": "Kristine",
+    "productBrand": "Chillium",
+    "productPrice": 7.11
+  },
+  {
+    "productId": 23,
+    "productName": "Debbie",
+    "productBrand": "Bitendrex",
+    "productPrice": 37.55
+  },
+  {
+    "productId": 24,
+    "productName": "Wilkins",
+    "productBrand": "Webiotic",
+    "productPrice": 64.87
+  }
+]
 }
