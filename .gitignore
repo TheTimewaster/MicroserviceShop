@@ -7,3 +7,4 @@ typings/
 .project
 .classpath
 .metadata
+.settings/
