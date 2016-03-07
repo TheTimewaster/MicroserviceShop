@@ -2,5 +2,8 @@ target
 bower_components/
 .classpath
 typings/
-.settings/
 .project
+/bin/
+.project
+.classpath
+.metadata
