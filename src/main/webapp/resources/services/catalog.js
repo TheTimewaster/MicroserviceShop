@@ -1,5 +1,5 @@
 microServiceShop.factory('catalog', ['$http', function($http){
-    return $http.get('/resources/catalog.json')
+    return $http.get('/catalog/all')
     .success(function(data)
     {
         return data.products;
