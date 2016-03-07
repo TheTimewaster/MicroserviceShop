@@ -1,4 +1,4 @@
-package services.registration;
+package app.registration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
