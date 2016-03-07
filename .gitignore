@@ -1,4 +1,6 @@
-/target/
+target
 bower_components/
 .classpath
 typings/
+.settings/
+.project
