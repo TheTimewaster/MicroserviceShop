@@ -4,6 +4,10 @@ package app.catalog.controller;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.Inet4Address;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.UnknownHostException;
 import java.util.logging.Logger;
 
 import org.json.simple.JSONObject;
@@ -16,8 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CatalogController
-{
-	private static final String	PATH_TO_DATA	= "F:/User/Eigene Dokumente/eclipse workspace/MicroserviceShop/src/main/webapp/resources/catalog.json";
+{	
+	private static final String RESOURCE_PATH = "catalog.json";
 
 	protected Logger			logger			= Logger
 	        .getLogger(CatalogController.class.getName());
@@ -31,16 +35,28 @@ public class CatalogController
 	@RequestMapping("/catalog/all")
 	public String getCatalog()
 	{
+		ClassLoader cl = this.getClass().getClassLoader();
+		
+		try
+		{
+			logger.info("Retrieving data from " + Inet4Address.getLocalHost().getHostName());
+		} catch (UnknownHostException e1)
+		{
+			logger.severe("Hostname could not be resolved!");
+		}
+		
 		JSONObject obj = null;
 
 		try
 		{
+			File file = new File(cl.getResource(RESOURCE_PATH).toURI());
+			
 			JSONParser parser = new JSONParser();
-			obj = (JSONObject) parser.parse(new FileReader(new File(PATH_TO_DATA)));
+			obj = (JSONObject) parser.parse(new FileReader(file));
 
-		} catch (ParseException | IOException e)
+		} catch (ParseException | IOException | URISyntaxException e)
 		{
-			e.printStackTrace();
+			logger.severe("Data could not be processed: " + e.getMessage());
 		} 
 		finally
 		{
